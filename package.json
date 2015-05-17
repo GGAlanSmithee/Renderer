@@ -1,0 +1,32 @@
+{
+  "name": "renderer",
+  "version": "1.0.0",
+  "description": "renderer for the gg engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GGAlanSmithee/Renderer.git"
+  },
+  "keywords": [
+    "javascript",
+    "webgl",
+    "renderer",
+    "2d"
+  ],
+  "author": "Alan Smithee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GGAlanSmithee/Renderer/issues"
+  },
+  "homepage": "https://github.com/GGAlanSmithee/Renderer",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jasmine": "^0.8.2",
+    "grunt-contrib-jshint": "^0.11.2"
+  }
+}
