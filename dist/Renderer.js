@@ -50,5 +50,47 @@ var Renderer = Renderer || {
 }).call(this);
 
 /*
-* "What matters in this life is not what we do but what we do for others, the legacy we leave and the imprint we make." - Eric Meyer
+* "Creativity is contagious. Pass it on." - Albert Einsten
 */
+
+
+
+Renderer.WebGLRenderer = function(gl, textures) {
+};
+
+Renderer.WebGLRenderer.SpritesPerDrawCall = Math.floor(65000/6);
+
+Renderer.WebGLRenderer.prototype = {
+    constructor : Renderer.WebGLRenderer,
+    
+    init : function(gl, vs, fs) {
+        
+    },
+    
+    createVertexBufferData : function() {
+    },
+    
+    createVertexIndexData : function() {
+    },
+
+    addTexture : function(gl, name, path) {
+    },
+    
+    clear : function(gl) {
+    },
+    
+    stage : function(shader, texture, transform, color) {
+    },
+    
+    drawStaged : function(gl) {
+    }
+};
+
+
+Renderer.WebGLShader = function(gl, name, vsSource, fsSource) {
+    return this;
+};
+
+Renderer.WebGLShader.prototype = {
+    constructor : Renderer.WebGLShader
+};
