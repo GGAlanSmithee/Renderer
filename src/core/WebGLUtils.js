@@ -58,12 +58,12 @@ Renderer.WebGLUtils = {
         
         let so = renderer.scaleOffset / 4;
         let co = renderer.colorOffset / 4;
-        let a = 0;
+        
         let r = 0;
         let i = (numbItems - 1) * qz;
         while (i >= 0) {
             r = i;
-            bd[r] = -1.0; a = 1; bd[r+1] = -1.0; bd[r+2] = 0.0; bd[r+3] = 0.0; bd[r+so] = 1.0; bd[r+so+1] = 1.0; bd[r+co] = 1.0; bd[r+co+1] = 1.0; bd[r+co+2] = 1.0; bd[r+co+3] = 1.0;
+            bd[r] = -1.0; bd[r+1] = -1.0; bd[r+2] = 0.0; bd[r+3] = 0.0; bd[r+so] = 1.0; bd[r+so+1] = 1.0; bd[r+co] = 1.0; bd[r+co+1] = 1.0; bd[r+co+2] = 1.0; bd[r+co+3] = 1.0;
             
             r += vs;
             bd[r] =  1.0; bd[r+1] = -1.0; bd[r+2] = 1.0; bd[r+3] = 0.0; bd[r+so] = 1.0; bd[r+so+1] = 1.0; bd[r+co] = 1.0; bd[r+co+1] = 1.0; bd[r+co+2] = 1.0; bd[r+co+3] = 1.0;
